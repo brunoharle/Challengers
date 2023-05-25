@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&family=Kumbh+Sans:wght@400;700&family=Manrope:wght@500;700&family=Outfit:wght@400;700&family=Overpass:wght@400;700&display=swap');
+
+body {
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    font-family: 'Manrope', sans-serif;
+    font-size: 13px;
+    color: hsl(217, 19%, 35%);
+
+    background-color: hsl(210, 46%, 95%);
+}
+
+.flex-container {
+    display: flex;
+    align-items: center;
+    max-width: 850px;
+    border-radius: 20px;
+
+    background: white;
+}
+
+.card-img { 
+    width: 40%;
+    
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.card-content h2, .card-content p {
+    max-width: 350px;
+}
+
+.card-content h2 {
+    position: relative;
+    top: 1rem;
+
+    margin-top: 0;
+
+    color: hsl(217, 19%, 35%);
+}
+
+.card-content p {
+    line-height: 1.5;
+}
+
+.card-footer {
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-top: 1rem;
+}
+
+.author {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+}
+
+.author img{
+    width: 50px;
+    height: 50px;
+
+    border-radius: 50%;
+}
+
+.pub-data h3 {
+    margin: 0;
+}
+
+.btn-share {
+    width: 30px;
+    height: 30px;
+
+    border: none;
+    border-radius: 50%;
+
+    cursor: pointer;
+}
+
+.btn-share:hover {
+    background-color: hsl(214, 17%, 51%);
+    background-image: white;
+}
+
+.btn-share:hover img{
+    filter: brightness(0) invert(1);
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center;
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+
+/*------Share Card-----*/
+
+.share-card {
+    width: 200px;
+    height: 40px;
+
+    position: relative;
+    top: -7rem;
+    right: -20.5rem;
+
+    display: none;
+    align-items: center;
+    justify-content: space-around;
+
+    border-radius: 6px;
+    
+    background: hsl(217, 19%, 35%);;
+}
+    
+.share-card:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border: 12px solid transparent;
+    border-top-color: hsl(217, 19%, 35%);
+    border-bottom: 0;
+    margin-left: -12px;
+    margin-bottom: -10px;
+}
+
+.share-card span {
+    color: white;
+    letter-spacing: 3px;
+}

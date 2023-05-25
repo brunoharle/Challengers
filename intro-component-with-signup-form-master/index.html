@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles.css">
+  <script src="index.js"></script>
+  <title>Frontend Mentor | Intro component with sign up form</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <div class="flex-container">
+    <section class="box-left">
+      <h1>Learn to code by watching others</h1>
+      <p>
+        See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
+        but understanding how developers think is invaluable. 
+      </p>
+    </section>
+
+    <section class="box-right">
+      <div class="promo">
+        <span><b>Try it free 7 days</b>  then $20/mo. thereafter</span>
+      </div>
+      <div onsubmit="submitForm(); return false;" class="form">
+        <form>
+          <div class="inputs-container">
+            <input type="text" placeholder="First Name" id="first-name" class="input-form">
+            <label class="error" id="first-name-error"></label>
+            <input type="text" placeholder="Last Name" id="last-name" class="input-form">
+            <label class="error" id="last-name-error"></label>
+            <input type="text" placeholder="Email Address" id="email" class="input-form">
+            <label class="error" id="email-error"></label>
+            <input type="password" placeholder="Password" id="password" class="input-form">
+            <label class="error" id="password-error"></label>
+          </div>
+          <div class="btn-container">
+            <button type="submit" class="submit-btn">Claim your free trial </button>
+          </div>
+          <div class="cookies">
+            <span>By clicking the button, you are agreeing to our <b>Terms and Services</b></span>
+          </div>
+        </form>
+      </div>
+    </section>
+  </div>
+  
+
+  
+
+  
+  
+  <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Your Name Here</a>.
+    </p>
+  </footer>
+</body>
+</html>

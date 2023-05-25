@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&family=Kumbh+Sans:wght@400;700&family=Manrope:wght@500;700&family=Outfit:wght@400;700&family=Overpass:wght@400;700&family=Poppins:wght@400;500;600;700&display=swap');
+
+body {
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    
+    background-color: hsl(0, 100%, 74%) ;
+    background-image: url(./images/bg-intro-desktop.png);
+
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+}
+
+.flex-container {
+    gap: 5rem;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-left, .box-right {
+    max-width: 500px;
+
+    color: white;
+}
+
+.box-left h1 {
+    font-size: 40px;
+}
+
+.box-right {
+    display: flex;
+    flex-direction: column;
+}
+
+.promo {
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: hsl(249, 34%, 41%);
+}
+
+.form {
+    padding: 20px;
+    border-radius: 20px;
+
+    background: white;
+}
+
+.inputs-container {
+    display: flex;
+    flex-direction: column;
+
+    margin-bottom: 1rem;
+}
+
+label {
+    margin-top: 0.2rem;
+    margin-bottom: 1rem;
+
+    font-size: 12px;
+    text-align: end;
+    font-style: italic;
+    color: hsl(0, 100%, 74%);
+}
+
+.input-form {
+    padding: 20px;
+
+    border-radius: 10px;
+    border: 1px solid hsl(246, 25%, 77%);
+
+    transition: all 180ms ease-in-out;
+
+    color: hsl(247, 11%, 16%) ;
+    font-weight: 600;
+}
+
+::-webkit-input-placeholder {
+    color: hsl(250, 10%, 36%) ;
+    font-weight: 600;
+}
+
+.input-form.error{
+    border: 2px solid hsl(0, 100%, 74%);
+}
+
+.input-form:hover {
+    border: 1px solid hsl(249, 34%, 41%);
+}
+.input-form:focus-visible {
+    border: 1px solid hsl(249, 34%, 41%);
+    outline: none;
+}
+
+.btn-container button{
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 1rem;
+
+    border: none;
+    border-radius: 10px;
+
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
+    color: white;
+
+    background: hsl(154, 59%, 51%);
+}
+
+.btn-container button:hover {
+    opacity: 0.7;
+}
+
+.cookies {
+    font-size: 10px;
+    color: hsl(249, 10%, 26%);
+
+    padding: 0 25px;
+}
+
+.cookies b {
+    color: hsl(0, 100%, 74%);
+}
